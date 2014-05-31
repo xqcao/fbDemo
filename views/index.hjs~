@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fbweb</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script type="text/javascript">
+	function myFunction(){
+		document.getElementById("txtBoxID").value="input number";
+	}
+
+  </script>
+  <style type="text/css">
+
+		input{
+			/*width:200px;*/
+			height:30px; 
+			border:2px solid gray;
+			vertical-align:middle;
+			line-height:30px;		
+		}
+		
+                
+		input:focus{background:yellow;}
+
+	</style>
+  </head>
+  <body style="background:#4FEEFA">
+	<figure>
+ 		<img src="http://www.mathsisfun.com/numbers/images/fibonacci-spiral.gif" width="300" height="150"/>
+		<img src="images/me.jpg" width="400" height="200"/>
+		<figure>
+		<h4>The Fibonacci numbers are the sequence of numbers F(n)( n>=0 ) defined by
+                              the linear recurrence equation F(n) = F(n-1) + F(n-2)
+			      with F(1) = 1, F(2) = 1. As a result of the definition (1), it is conventional to define F(0)=0.
+			      Starting with a Node.js webserver-------------Adam Cao
+		</h4>
+      <form action="/login" method="post"> 
+            fibonacci(0) to fibonacci :<input type="text" name="numbera" style="width: 150px;"></br> 
+  	    </br>
+            <input type="submit" value="search" style="width: 100px;" onmouseover="this.style.backgroundColor = '#FF99FF';"  onmouseout="this.style.backgroundColor='white';">
+	    <input type="reset" name="cancel" value="Clear" onclick="myFunction(); return false" style="width: 100px;" onmouseover="this.style.backgroundColor = '#FF99FF';"  onmouseout="this.style.backgroundColor='white';"></br>
+	    </br>
+	    <textarea id="txtBoxID" rows="10" cols="25">{{abc}}</textarea>
+	    
+      </form>
+  </body>
+</html>
